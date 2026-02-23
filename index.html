@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snowfox Secure Servers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .page {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background: #0a0e17;
+    }
+
+    .bg-image {
+      position: absolute;
+      inset: 0;
+      background-image: url('assets/photo-1568952433726-3896e3881c65-418e81c2-d7e4-4d51-a9dd-2edeb1214336.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(10, 14, 23, 0.4) 0%, rgba(10, 14, 23, 0.85) 100%);
+    }
+
+    .logo {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      z-index: 2;
+      height: 58px;
+      width: auto;
+    }
+
+    .logo img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+
+    .main {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 900px;
+    }
+
+    .server-image {
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      display: block;
+    }
+
+    .server-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .headline {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+
+    .subheadline {
+      font-size: clamp(0.95rem, 2vw, 1.125rem);
+      font-weight: 400;
+      opacity: 0.9;
+      letter-spacing: 0.01em;
+    }
+
+    .help-btn {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 2;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #fff;
+      font-size: 1.25rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .help-btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="bg">
+      <div class="bg-image"></div>
+      <div class="bg-overlay"></div>
+    </div>
+
+    <a href="#" class="logo" aria-label="snowFOX SECURE SERVERS">
+      <img src="assets/SFSS_Logo_inv_2-e189e463-05d8-490d-a7ba-26f1de4ea25c.png" alt="snowFOX SECURE SERVERS">
+    </a>
+
+    <main class="main">
+      <div class="server-image">
+        <img src="assets/rm21-304-front-7ce64865-387f-4ec2-ba52-e75baf88df00.png" alt="Secure rackmount server">
+      </div>
+      <h1 class="headline">Built for Surveillance. Secured by Design.</h1>
+      <p class="subheadline">Secure, NDAA-Compliant Servers Purpose-Built for Surveillance.</p>
+    </main>
+
+    <!-- <a href="#" class="help-btn" aria-label="Help">?</a> -->
+  </div>
+</body>
+</html>
